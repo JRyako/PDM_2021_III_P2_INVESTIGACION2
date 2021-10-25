@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainFragment">
+
+    <TextView
+        android:id="@+id/txvResultado1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="23dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="@+id/txtNota"
+        app:layout_constraintTop_toBottomOf="@+id/txtNota" />
+
+    <TextView
+        android:id="@+id/txvNombreDeLaApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:text="Convertidor de Nota y Promedio"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/txvInformación"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:maxLength="5"
+        app:layout_constraintEnd_toStartOf="@+id/btnNota"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvInfoNota" />
+
+    <Button
+        android:id="@+id/btnNota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="11dp"
+        android:text="Calcular"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtNota"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtNota" />
+
+    <Button
+        android:id="@+id/btnPromedio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtPromedio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtPromedio" />
+
+    <TextView
+        android:id="@+id/txvInfoPromedio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Calcule su Nota para ver su Promedio Redondeado del Parcial:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvResultado1" />
+
+    <TextView
+        android:id="@+id/txvResultado2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="29dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="@+id/txtPromedio"
+        app:layout_constraintTop_toBottomOf="@+id/txtPromedio" />
+
+    <EditText
+        android:id="@+id/txtPromedio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:autoText="false"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:maxLength="3"
+        app:layout_constraintEnd_toStartOf="@+id/btnPromedio"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvInfoPromedio" />
+
+    <TextView
+        android:id="@+id/txvInformación"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="101dp"
+        android:text="Esta App Te ayudara a Calcular tu Promedio o tu Nota:"
+        app:layout_constraintBottom_toTopOf="@+id/txtNota"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txvInfoNota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="186dp"
+        android:text="Calcule su Promedio para ver su Nota del Parcial:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
